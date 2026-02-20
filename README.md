@@ -1,16 +1,16 @@
-# 🚀 Softmax Yük Dengeleyici
+ Softmax Yük Dengeleyici
 
 Bu proje, **Softmax Action Selection** tabanlı istemci tarafı adaptif bir yük dengeleyici tasarımını içermektedir. Sistem, **non-stationary (zamanla değişen)** ve **gürültülü** sunucu ortamında ortalama gecikmeyi (latency) minimize etmeyi amaçlar.
 
 ---
 
-## 🎯 Amaç
+ Amaç
 
 Round-Robin ve Random gibi klasik yöntemler sunucu performansını dikkate almaz ve değişen ortamlara uyum sağlayamaz. Bu projede, geçmiş performans verisine göre öğrenen ve olasılıksal seçim yapan Softmax yaklaşımı uygulanmıştır.
 
 ---
 
-## 🧠 Özellikler
+ Özellikler
 
 - Softmax Action Selection (Boltzmann keşfi)  
 - Non-stationary sunucu simülasyonu (drift)  
@@ -21,7 +21,7 @@ Round-Robin ve Random gibi klasik yöntemler sunucu performansını dikkate alma
 
 ---
 
-## ⚙️ Çalışma Mantığı
+ Çalışma Mantığı
 
 1. K adet sunucudan oluşan ortam simüle edilir.  
 2. Sunucuların ortalama gecikmeleri zamanla drift eder.  
@@ -31,7 +31,7 @@ Round-Robin ve Random gibi klasik yöntemler sunucu performansını dikkate alma
 
 ---
 
-## ⏱️ Karmaşıklık
+ Karmaşıklık
 
 - İstek başına zaman karmaşıklığı: **O(K)**  
 - Toplam simülasyon maliyeti: **O(T·K)**  
@@ -39,7 +39,7 @@ Round-Robin ve Random gibi klasik yöntemler sunucu performansını dikkate alma
 
 ---
 
-## ▶️ Çalıştırma
+ Çalıştırma
 
 Java 17+ ile:
 
@@ -47,7 +47,7 @@ Java 17+ ile:
 
 ---
 
-## 📊 Sonuç
+ Sonuç
 
 Softmax tabanlı yaklaşımın, non-stationary ve gürültülü ortamlarda oracle performansına yakınsadığı gözlemlenmiştir.
 
